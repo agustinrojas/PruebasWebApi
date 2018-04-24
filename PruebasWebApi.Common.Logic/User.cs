@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace PruebasWebApi.Common.Logic
 {
-    class User
+    public class User
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Apellidos { get; set; }
     }
 }

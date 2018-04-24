@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PruebasWebApi.DataAcces.Dao.Interfaces
 {
-    interface IGetAsync
+    public interface IDao:IGet, ISet
     {
     }
 }

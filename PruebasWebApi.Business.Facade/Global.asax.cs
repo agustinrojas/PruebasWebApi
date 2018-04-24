@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PruebasWebApi.Business.Facade.Autofac;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,7 @@ namespace PruebasWebApi.Business.Facade
     {
         protected void Application_Start()
         {
+            Bootstrapper.Run();
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
